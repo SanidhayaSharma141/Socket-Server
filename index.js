@@ -13,7 +13,7 @@ const io = require("socket.io")(server);
 app.use(express.json());
 
 // Database connection
-const DB = "mongodb+srv://sanidhyas141:vHmTfqbv6B2uLcZv@cluster0.yhwivpp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const DB = "mongodb+srv://sanidhyas141:<password>@cluster0.yhwivpp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(DB)
   .then(() => {
     console.log("MongoDB connected");
